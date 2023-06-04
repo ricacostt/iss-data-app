@@ -1,0 +1,9 @@
+<!-- views/astronauts.html.erb -->
+
+<h1>Current Astronauts in Space</h1>
+
+<ul>
+  <% astronauts['people'].each do |astronaut| %>
+    <li><%= astronaut['name'] %></li>
+  <% end %>
+</ul>

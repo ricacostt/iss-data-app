@@ -18,3 +18,9 @@ get '/position' do
 
   erb :position, locals: { data: iss_now }
 end
+
+get '/astronauts' do
+  astronauts = OpenNotify.astros
+
+  erb :astronauts, locals: { astronauts: astronauts }
+end
